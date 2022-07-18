@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const getTemprature = require("./utils/forecast");
-/************* */
+/**************/
 
 const cors = require("cors");
 const corsOptions = {
@@ -13,7 +13,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions)); // Use this after the variable declaration
 
-/*************** */
+/****************/
 
 /*********** Auto-refresh *******/
 const livereload = require("livereload");
