@@ -1,7 +1,7 @@
 console.log("client side javascript file");
 
 const result = document.querySelector(".result-api");
-const url = "http://127.0.0.1:3000/weather?city=";
+const url = "/weather?city=";
 const form2 = document.querySelector(".form2");
 const ourInput = document.querySelector(".input");
 

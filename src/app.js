@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const getTemprature = require("./utils/forecast");
 /**************/
-
+const port = process.env.PORT || 3000
 const cors = require("cors");
 const corsOptions = {
     origin: "*",
@@ -58,6 +58,8 @@ app.get("/about", (req, res) => {
 });
 /******************************************** */
 app.get("", (req, res) => {
+
+    
     getTemprature(req.query.city, (error, data) => {
         if (error) {
             res.render("index", {
@@ -112,8 +114,8 @@ app.get("*", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log("server is up on port 3000 ");
+app.listen(port, () => {
+    console.log("server is up on port" + port);
 });
 
 /* nodemon src/app.js */
