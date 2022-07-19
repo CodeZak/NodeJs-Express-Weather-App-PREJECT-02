@@ -8,8 +8,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body {
+    background-color: rgb(17, 75, 106);
+}
 
 .container {
+    background-color: rgb(67, 182, 223);
     max-width: 700px;
     margin: 10px auto;
     display: flex;
@@ -96,7 +100,7 @@ a:first-child {
 
 a:hover {
     color: white;
-    background-color: rgb(134, 178, 218);
+    background-color: rgb(12, 83, 121);
 }
 
 @media (max-width: 210px) {
